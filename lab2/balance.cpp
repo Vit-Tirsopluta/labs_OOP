@@ -1,22 +1,23 @@
 #include "balance.h"
 
-Balance::Balance(float init) {
+Balance::Balance(float init){
     currentBalance = init;
 }
 
-void Balance::TopUp(float amount) {
+void Balance::TopUp(float amount){
     currentBalance += amount;
 }
 
-void Balance::Spend(float amount) {
-    if (currentBalance >= amount) {
+void Balance::Spend(float amount){
+    if (currentBalance >= amount){
         currentBalance -= amount;
-    } else {
+    }
+    else{
         std::cout << "Not enough money!\n";
     }
 }
 
-float Balance::GetBalance() const {
+float Balance::GetBalance() const{
     return currentBalance;
 }
 

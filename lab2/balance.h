@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-class Balance {
+class Balance{
     float currentBalance;
 public:
     Balance(float init = 100);
