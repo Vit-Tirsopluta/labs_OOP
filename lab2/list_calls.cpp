@@ -3,7 +3,7 @@
 
 ListCalls::ListCalls() {
     size = 0;
-    capacity = 5; 
+    capacity = 5;
     contacts = new std::string[capacity];
 }
 
